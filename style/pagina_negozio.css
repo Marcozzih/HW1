@@ -1,0 +1,325 @@
+body {
+    
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  width: 100vw;
+  font-family: 'Sofia', sans;
+  background-color: black;
+
+
+
+}
+
+nav #titolo {
+  font-size: 2rem;
+  margin: 40px;
+}
+
+nav #link a{
+  margin: 0px 3vw;
+}
+
+nav #link span {
+  margin: 0px 2vw;
+  font-size: 20px;
+}
+
+a.button {
+  background-color: rgb(255, 200, 8, 1);
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+a.button:hover {
+  background-color: rgb(255, 200, 8, 0.9);
+}
+
+
+/*  per la sezione random albums  */
+section {
+  color: black;
+
+
+  text-align: center;
+  
+}
+
+#radAlbums {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  
+  position: relative;
+  margin-top: 50px;
+
+}
+
+#radAlbums div {
+  width: 15vw;
+
+  font-size: 10px;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+
+}
+
+#radAlbums img {
+  border: 0.5px solid black;
+  width: 200px;
+  height: 200px;
+}
+/* * *per la sezione della ricerca * * */
+
+
+#vetrina {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#vetrina div {
+  width: 15vw;
+
+  font-size: 10px;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+
+}
+
+#vetrina img {
+  border: 0.5px solid black;
+
+  width: 180px;
+  height: 180px;
+}
+
+/* * * per il form * * */
+
+#input {
+ position: absolute;
+}
+
+.input_view {
+  top: 50px;
+  left: 70%;
+  
+}
+
+.input_hidden {
+  top: 350px;
+  left: 70%;
+}
+
+/* * * per la X * */
+
+
+
+#exit .x {
+  background: teal;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+#exit .x:after {
+  content: '';
+  height: 60px;
+  border-left: 5px solid black;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 20px;
+}
+
+#exit .x:before {
+  content: '';
+  height: 60px;
+  border-left: 5px solid black;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 20px;
+}
+
+
+/* * *per la view modale * * */
+
+#modal_view.hidden{
+  display: none;
+}
+
+#modal_view #up{
+  display: flex;
+}
+
+#modal_view #down{
+  display: flex;
+  align-items: center;
+  margin: 50px;
+
+}
+#modal_view #down h1{
+  font-size: 20px;
+}
+
+#modal_view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#modal_view img{
+
+  width: 480px;
+  height: 480px;
+
+  margin: 50px;
+
+  border: solid 1px black;
+}
+
+
+
+#modal_view #prodotto #album{
+
+  margin-top: 50px;
+}
+
+#modal_view #prodotto #artista{
+
+  font-size: 10px;
+
+}
+
+#modal_view #prodotto #formato,
+#modal_view #prodotto #bottone{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 60px;
+}
+
+
+#modal_view #exit{
+  width: 200px;
+  margin-top: 50px;
+}
+
+#modal_view a {
+  cursor: pointer;
+}
+
+
+
+/* bottoni */
+
+#modal_view #formato .offClick {
+
+  border: solid 0.7px black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#modal_view #formato .click {
+  border: solid 0.7px chocolate;
+  background-color: rgb(243, 207, 194);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#modal_view #prodotto #carrello{
+
+  padding: 20px;
+  background-color: chocolate;
+  border-radius: 20px;
+
+} 
+
+#modal_view #prodotto #carrello:hover{
+
+
+  background-color:coral;
+  
+
+}
+
+
+
+/* * * * * * * * */
+
+/* per la parte dell'inserimento completato */
+
+#inserimento_fatto.hidden{
+  display: none;
+}
+
+#inserimento_fatto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+}
+
+
+
+
+
+/* * * * * * */
+
+
+/* * * per la versione mobile * * */
+#menu {
+  display: none;
+ }
+ #menu div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 40px;
+  border-radius: 5px;
+ }
+
+ 
+ @media (max-width: 700px) {
+  #link {
+  display: none;
+  }
+  #menu
+  {
+  display: block;
+  }
+ }
+ 
+ 
+ 

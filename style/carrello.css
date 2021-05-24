@@ -1,0 +1,255 @@
+body {
+    color: white;
+    margin: 0;
+  }
+  
+  a {
+    cursor: pointer; 
+  }
+  
+  nav {
+    height: 80px;
+    font-family: 'Sofia', sans;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: black;
+  }
+  nav #titolo {
+    font-size: 2rem;
+    margin: 40px;
+  }
+  
+  nav #link span {
+    margin: 0px 3vw;
+    font-size: 30px;
+  }
+  
+  nav span img{
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+  }
+
+     
+  header nav,
+  section {
+    letter-spacing: 2px;
+  }
+
+  div h1,
+  #main {
+    color: black;
+  }
+
+  /* sezione menù  tendina */
+
+
+  #link .arrow {
+    border: solid 3px white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 6px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 2;
+  }
+
+  #options.hidden {
+    display: none;
+  }
+
+  #options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    top: 100px;
+    left: calc(100% - 200px);
+
+    border: solid 1px rgb(31, 31, 119);
+    border-radius: 10px;
+    background-color: rgb(187, 209, 197);
+    width: 180px;
+    height: 50px;
+
+    color: black;
+    
+    z-index: 4;
+  }
+
+  
+
+  #options a:hover {
+    color: gray;
+  }
+
+
+  /*   *   *   *   *   *   */
+
+  #mainBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 30px;
+    margin-right: 60px;
+  }
+
+
+  /* sezione album inseriti */
+
+#prodotto {
+  flex-direction: column;
+  
+}
+
+#prodotto .contenitore{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+#prodotto .str_prodotto{
+
+  display: flex;
+  
+  height: 300px;
+  
+  margin: 20px;
+}
+
+#prodotto img{
+
+  
+  height: 300px;
+  width: 300px;
+
+}
+
+#prodotto .str_album{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+#prodotto .titolo{
+
+  font-size: 40px;
+  margin: 10px;
+
+}
+
+#prodotto .artista{
+  margin-left: 10px;
+}
+
+#prodotto .formato{
+  margin-left: 10px;
+}
+
+#prodotto .rimuovi{
+  margin-left: 10px;
+  margin-top: 150px;
+}
+
+
+#prodotto .prezzo{
+  position: absolute;
+  top: 60px;
+  left: 90vw;
+  font-size: 40px;
+  
+  
+}
+
+#totale {
+  position: relative;
+}
+#totale span {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  font-size: 35px;
+  
+}
+
+
+.spazio {
+  
+  border: 0.5px solid gray;
+  margin: 30px;
+}
+
+
+
+  /*  *  *  *  *  *  */
+
+
+  
+  /*mobile*/
+  
+  #menu {
+    display: none;
+   }
+   #menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 40px;
+    border-radius: 5px;
+   }
+   
+   @media (max-width: 700px) {
+    #link {
+    display: none;
+    }
+    #menu
+    {
+    display: block;
+    }
+   }
+   
+   @media (max-width: 700px) {
+   
+   
+   #albums{
+     flex-direction: column;
+   }
+     #albums img {
+       width: 200px;
+     height: 100%;
+     }
+   
+   #albums div {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin-bottom: 100px;
+     
+     }
+     
+     #albums div a {
+       font-size: 20px;
+   
+     }
+     
+   section {
+     height: 2200px;  
+   }
+     
+   }
+   
+   
